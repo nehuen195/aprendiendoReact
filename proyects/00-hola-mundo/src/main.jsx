@@ -1,7 +1,7 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 
-const createButtom = ({text}) => {
+const Buttom = ({text}) => {
   return (   
   <button>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -16,8 +16,8 @@ const createButtom = ({text}) => {
 const root = createRoot(document.getElementById('root'))
 root.render(
   <React.Fragment>
-    {createButtom({text: 'boton 1'})}
-    {createButtom({text: 'boton 3'})}
-    {createButtom({text: 'boton 2'})}
+    <Buttom text="boton1"/>
+    <Buttom text="boton2"/>
+    <Buttom text="boton3"/>
   </React.Fragment>
 )
